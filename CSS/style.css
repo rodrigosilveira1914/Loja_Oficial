@@ -1,0 +1,40 @@
+body {
+    background-color: #dde5ee;
+    margin: 0;
+}
+
+header {
+    background-color: #0e0e10f5;
+    color: #dde5ee
+}
+
+.icones-cabecalho {
+    color: #01bbff;
+    font-size: 20px;
+    padding: 14px;
+    margin-left: 1200px;
+}
+
+h2 {
+    color: #044b64fb;
+}
+
+footer {
+    background-color: #0e0e10f5;
+    color: #dde5ee;
+}
+
+footer .subtopicos {
+    color: #01bbff;
+}
+
+.direitos {
+    text-align: center;
+}
+
+.redes-sociais {
+    color: #01bbff;
+    font-size: 26px;
+    padding: 14px;
+    margin-left: 1200px;
+}
