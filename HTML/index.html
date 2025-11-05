@@ -6,6 +6,12 @@
     <link rel="stylesheet" href="/CSS/style.css" />
     <link
       rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.rtl.min.css"
+      integrity="sha384-CfCrinSRH2IR6a4e6fy2q6ioOX7O6Mtm1L9vRvFZ1trBncWmMePhzvafv7oIcWiW"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
     />
     <title>Dolphin Sports</title>
@@ -13,28 +19,34 @@
 
   <body>
     <header>
-      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
-      <a href="index.html"></a><img src="" alt="Logo da Loja" />
-      <nav>
-        <section class="cabecalho">
-          <ul class="menu-cabecalho">
-            <li>Clubes Nacionais</li>
-            <li>Clubes Internacionais</li>
-            <li>Seleções</li>
-            <li>Basquete</li>
-            <li>Futebol Americano</li>
-            <li>Conjuntos</li>
-          </ul>
-          <button class="icone-itens-salvos" aria-label="Abrir itens salvos">
-            <i class="bi bi-star"></i>
-          </button>
-          <button
-            class="icone-sacola-compras"
-            aria-label="Abrir sacola de compras"
-          >
-            <i class="bi bi-bag"></i>
-          </button>
-        </section>
+      <nav class="cabecalho">
+        <div class="menu-cabecalho">
+          <div class="itens-cabecalho">
+            <div class="item">
+              <i class="bi bi-list icone-menu">Menu</i>
+              <section class="menu">
+                <i class="bi bi-x-lg fechar-menu"></i>
+                <a href="">Clubes Nacionais</a>
+                <a href="">Clubes Internacionais</a>
+                <a href="">Seleções</a>
+                <a href="">Basquete</a>
+                <a href="">Futebol Americano</a>
+                <a href="">Conjuntos</a>
+              </section>
+            </div>
+            <div class="item">
+              <a class="logo-cabecalho" href="index.html"
+                ><img src="" alt="Logo da Loja"
+              /></a>
+            </div>
+            <div class="item">
+              <i class="bi bi-bag-fill"></i>
+            </div>
+            <div class="item">
+              <i class="bi bi-person-circle"></i>
+            </div>
+          </div>
+        </div>
       </nav>
     </header>
     <main>
@@ -78,4 +90,15 @@
       </section>
     </footer>
   </body>
+  <script>
+    const botaoMenu = document.querySelector(".icone-menu");
+    const menu = document.querySelector(".menu");
+    botaoMenu.addEventListener("click", () => {
+      menu.classList.toggle("visual");
+    });
+    const botaoFecharMenu = document.querySelector("fechar-menu");
+    botaoFecharMenu.addEventListener("click", () => {
+      menu.classList.remove("visual");
+    });
+  </script>
 </html>

@@ -1,40 +1,66 @@
 body {
-    background-color: #dde5ee;
-    margin: 0;
+  background-color: #dde5ee;
+  margin: 0;
 }
 
-header {
-    background-color: #0e0e10f5;
-    color: #dde5ee
-}
-
-.icones-cabecalho {
+nav .cabecalho {
+    display: flex;
+    align-items: center;
+    background-color: #212529;
     color: #01bbff;
-    font-size: 20px;
-    padding: 14px;
-    margin-left: 1200px;
+    padding: 10px;
+}
+
+.menu-cabecalho {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.itens-cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.icone-menu {
+    font-size: 26px;
+    cursor: pointer;
+    position: relative;
+}
+
+.menu {
+    display: none;
+    position: absolute;
+    left: -250px;
+    background-color: #dde5ee;
+    color: #044b64fb;
+    min-width: 100%;
+    flex-direction: column;
+    box-shadow: 0 4px #044b64fb;
+    z-index: 1000;
 }
 
 h2 {
-    color: #044b64fb;
+  color: #044b64fb;
 }
 
 footer {
-    background-color: #0e0e10f5;
-    color: #dde5ee;
+  background-color: #0e0e10f5;
+  color: #dde5ee;
 }
 
 footer .subtopicos {
-    color: #01bbff;
+  color: #01bbff;
 }
 
 .direitos {
-    text-align: center;
+  text-align: center;
 }
 
 .redes-sociais {
-    color: #01bbff;
-    font-size: 26px;
-    padding: 14px;
-    margin-left: 1200px;
+  color: #01bbff;
+  font-size: 26px;
+  padding: 14px;
+  margin-left: 1200px;
 }
