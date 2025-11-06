@@ -3,42 +3,24 @@ body {
   margin: 0;
 }
 
-nav .cabecalho {
-    display: flex;
-    align-items: center;
-    background-color: #212529;
-    color: #01bbff;
-    padding: 10px;
+nav i {
+    color: #0199ff;
+    font-size: 30px;
+    border: none;
 }
 
-.menu-cabecalho {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.itens-cabecalho {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.icone-menu {
-    font-size: 26px;
-    cursor: pointer;
-    position: relative;
+.icone-sacola-de-compras {
+    padding: 15px;
 }
 
 .menu {
-    display: none;
-    position: absolute;
-    left: -250px;
-    background-color: #dde5ee;
-    color: #044b64fb;
-    min-width: 100%;
-    flex-direction: column;
-    box-shadow: 0 4px #044b64fb;
+    transform: translate(-100%);
+    transition: transform 0.3s ease;
     z-index: 1000;
+}
+
+.menu.visual {
+    transform: translate(0);
 }
 
 h2 {
@@ -58,9 +40,3 @@ footer .subtopicos {
   text-align: center;
 }
 
-.redes-sociais {
-  color: #01bbff;
-  font-size: 26px;
-  padding: 14px;
-  margin-left: 1200px;
-}
